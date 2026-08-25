@@ -16,7 +16,51 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Book a room</legend>
+          <label for="first-name">First name:</label>
+          <input type="text" id="first-name" placeholder="John" name="first-name" required />
+          <br />
+          <label for="last-name">Last name: </label>
+          <input type="text" id="last-name" placeholder="Doe" name="last-name" required />
+          <br />
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="john.doe@example.com"
+            name="email"
+            required
+          />
+          <br />
+          <label for="select-room">Room:</label>
+          <select name="room" id="select-room" required>
+            <option value="" disabled selected>--please select a room--</option>
+            <option value="201">Room 201</option>
+            <option value="204">Room 204</option>
+            <option value="305">Room 305</option>
+          </select>
+          <br />
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+          <br />
+          <label for="start-time">From:</label>
+          <input type="time" id="start-time" name="start-time" required />
+          <br />
+          <label for="end-time">To:</label>
+          <input type="time" id="end-time" name="end-time" required />
+          <br />
+          <label for="conditions">
+            I have read and accepted the <a href="#">terms and conditions.</a>
+          </label>
+          <input type="checkbox" required />
+          <br />
+          <input type="submit" />
+        </fieldset>
+      </form>
+    </main>
     <footer>&copy; David Forssén 2026.</footer>
   </body>
 </html>
