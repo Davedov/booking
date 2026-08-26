@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book a room</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -11,7 +12,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="rooms.html">Rooms</a>
-        <a href="Book.html">Book a Room</a>
+        <a href="book.html">Book a Room</a>
         <a href="bookings.html">My Bookings</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -19,7 +20,7 @@
     <main>
       <form action="">
         <fieldset>
-          <legend>Book a room</legend>
+          <legend>personal information</legend>
           <label for="first-name">First name:</label>
           <input type="text" id="first-name" placeholder="John" name="first-name" required />
           <br />
@@ -34,7 +35,9 @@
             name="email"
             required
           />
-          <br />
+        </fieldset>
+        <fieldset>
+          <legend>booking information</legend>
           <label for="select-room">Room:</label>
           <select name="room" id="select-room" required>
             <option value="" disabled selected>--please select a room--</option>
@@ -51,11 +54,13 @@
           <br />
           <label for="end-time">To:</label>
           <input type="time" id="end-time" name="end-time" required />
-          <br />
+        </fieldset>
+        <fieldset>
+          <legend>terms and conditions</legend>
           <label for="conditions">
             I have read and accepted the <a href="#">terms and conditions.</a>
           </label>
-          <input type="checkbox" required />
+          <input type="checkbox" id="conditions" name="conditions" required />
           <br />
           <input type="submit" />
         </fieldset>
