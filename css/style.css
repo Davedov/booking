@@ -94,6 +94,11 @@ input::placeholder {
   opacity: 0.5;
 }
 
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 fieldset {
   border: 1px solid var(--border-color);
   padding: var(--padding);
@@ -104,6 +109,11 @@ ul {
   list-style-type: none;
 }
 
+table {
+  border-collapse: collapse;
+  margin: var(--margin);
+}
+
 table,
 thead,
 th,
@@ -111,7 +121,6 @@ tbody,
 td,
 tr {
   border: 1px solid var(--border-color);
-  border-collapse: collapse;
   padding: var(--padding);
 }
 
