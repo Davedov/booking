@@ -10,7 +10,17 @@
   --font-size: 16px;
 }
 
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+}
+
 * {
+  box-sizing: border-box;
   font-family: var(--font-family);
   font-size: var(--font-size);
   background-color: var(--background-color);
@@ -111,7 +121,8 @@ ul {
 
 table {
   border-collapse: collapse;
-  margin: var(--margin);
+  margin: 0 auto;
+  width: 98vw;
 }
 
 table,
@@ -122,6 +133,12 @@ td,
 tr {
   border: 1px solid var(--border-color);
   padding: var(--padding);
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--margin);
 }
 
 img {
