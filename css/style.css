@@ -1,6 +1,7 @@
 :root {
   --padding: 10px;
   --margin: 10px;
+  --primary-color: #55dd55;
   --border-color: #000;
   --background-color: #f5f5f5;
   --text-color: #333;
@@ -63,6 +64,7 @@ h6 {
 }
 
 header {
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +72,13 @@ header {
 }
 
 footer {
+  background-color: var(--primary-color);
   padding: var(--padding);
+}
+
+header *,
+footer * {
+  background-color: var(--primary-color);
 }
 
 section {
@@ -133,6 +141,13 @@ tr {
   gap: var(--margin);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--margin) auto;
+}
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -154,6 +169,7 @@ tr {
     --background-color: #333;
     --text-color: #f5f5f5;
     --border-color: #f5f5f5;
+    --primary-color: #097709;
   }
 
   input {
