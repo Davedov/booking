@@ -17,6 +17,9 @@ body {
   font-size: var(--font-size);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -69,6 +72,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding);
+}
+
+main {
+  flex: 1;
 }
 
 footer {
@@ -139,6 +146,10 @@ tr {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--margin);
+}
+
+.bookings-tables {
+  margin-top: var(--margin);
 }
 
 img {
